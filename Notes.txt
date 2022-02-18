@@ -1,0 +1,24 @@
+Adding conditional statements(if...else) is not valid in jsx, jsx is just for function call and object constructoins
+
+List Rendering: NameList(){
+    const name = ['a','b']
+    return(
+        
+    )
+}
+
+Lifecycle Methods: 
+1. Mounting Lifecycle - static getDerivedStateFromProps(props,state ) return (new state), 
+2. Updating Lifecycle - static getDerivedStateFromProps(props,state ), shouldCompnentUpdate(nextProps, nextState), render(), getSnapshotBeforeUpdate(prevProps, prevState) return(null/value), componentDidUpdate(prevProps,prevState, snapshot)
+3. Unmounting Method: componentWillUnmount() - Do not call the setState method
+4. Error handling: static getDerivedStateFromError(error), componentDidCatch(error, info)
+
+Advanced Topics
+
+Fragments: let you group list of children without using extra nodes
+<React.Fragment> 
+
+pure component:
+
+useEffect(side effect): It does the work of componentDidUpdate, componentDidMount, componentWillUnmount. runs after every Render of component. to avoid subsequent rendering we use second parameter as an empty array
+e.g. useEffect(()=>{},[])
