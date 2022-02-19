@@ -22,3 +22,7 @@ pure component:
 
 useEffect(side effect): It does the work of componentDidUpdate, componentDidMount, componentWillUnmount. runs after every Render of component. to avoid subsequent rendering we use second parameter as an empty array
 e.g. useEffect(()=>{},[])
+
+useContext: It provides way to pass data through the component tree without passing props manually.
+
+useReducer: State management
